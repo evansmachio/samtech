@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Services - Greenleaves</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <h1>Our Services</h1>
+
+    <section>
+        <ul class="services-list">
+            <li>📚 Free Online Courses</li>
+            <li>🎓 Certificate for Graduates</li>
+            <li>💼 Career Mentorship</li>
+            <li>🧠 Personal Coaching</li>
+            <li>🌐 Web Development Training</li>
+            <li>📊 Digital Marketing Training</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact: ev4m45@gmail.com | Phone: 0116118541</p>
+    </footer>
+<h2>Select a Service to Learn More</h2>
+
+<select id="serviceSelect" onchange="goToVideo()">
+    <option value="">-- Choose a service --</option>
+    <option value="https://www.youtube.com/watch?v=HhZf4JgZnaY">Web Development</option>
+    <option value="https://www.youtube.com/watch?v=2eebptXfEvw">Digital Marketing</option>
+    <option value="https://www.youtube.com/watch?v=Z1Yd7upQsXY">Data Science</option>
+    <option value="https://www.youtube.com/watch?v=9s-cp3VxYqk">Career Mentorship</option>
+</select>
+<script>
+function goToVideo() {
+    const url = document.getElementById('serviceSelect').value;
+    if (url) {
+        window.open(url, '_blank'); // opens YouTube in a new tab
+    }
+}
+</script>
+
+</body>
+</html>
